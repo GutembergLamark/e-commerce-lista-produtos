@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://kit.fontawesome.com/28750b4410.js" crossorigin="anonymous"></script>
+    <title>Lista de Produtos</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Shop now</h1>
+    </header>
+
+    <main>
+
+        <section id="filters" class="filtersContainer">
+            <div class="filtersContainer__containerBotoes">
+                <button class="filtersContainer__estiloGeralBotoes estiloGeralBotoes--mostrarTodos">Todos
+                    Produtos</button>
+                <button
+                    class="filtersContainer__estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti">Hortifruti</button>
+                <button
+                    class="filtersContainer__estiloGeralBotoes estiloGeralBotoes--filtrarPanificadora">Panificadora</button>
+                <button
+                    class="filtersContainer__estiloGeralBotoes estiloGeralBotoes--filtrarLactineos">Lactíneos</button>
+            </div>
+            <div class="containerBuscaPorNome">
+
+                <input type="text" placeholder="Pesquisar por" class="filtersContainer__campoBuscaPorNome">
+                <button class="filtersContainer__estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+
+            </div>
+        </section>
+
+        <div class="filtersProdutos">
+            <div class="containerListaProdutos" id="listProdutos">
+                <ol class="containerListaProdutos__listaDeProdutos">
+
+                </ol>
+            </div>
+            <div class="containerListaCarrinho">
+                <div class="containerListaCarrinho__headerCarrinho">
+                    <img src="./src/img/carrinho.png" alt="">
+                    <h2>Carrinho</h2>
+                </div>
+                <ol class="containerListaCarrinho__listaDeItens">
+                    <img class="containerListaCarrinho__listaDeItens__imagemItem--semItens semItens"
+                        src="./src/img/bag.png" alt="">
+                    <p class="containerListaCarrinho__listaDeItens__text--semItens semItens">Por enquanto não temos
+                        produtos no
+                        carrinho</p>
+                    <div class="containerListaCarrinho__itens">
+
+                    </div>
+                </ol>
+                <div
+                    class="containerListaCarrinho__containerQuantidade containerListaCarrinho__estiloQuantidadeValor hidden">
+                    <p class="containerListaCarrinho__nomeQuantidade">Quantidade:</p>
+                    <p class="containerListaCarrinho__quantidade"></p>
+                </div>
+                <div
+                    class="containerListaCarrinho__containerValorTotal containerListaCarrinho__estiloQuantidadeValor hidden">
+                    <p class="containerListaCarrinho__nomeTotal">Total</p>
+                    <p class="containerListaCarrinho__total"></p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <script src="src/js/dataProdutos.js"></script>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
