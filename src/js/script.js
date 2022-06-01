@@ -179,6 +179,7 @@ function filtrarPorBusca() {
             || removerAcentos(element.categoria.toLocaleLowerCase()).includes(removerAcentos(inputPesquisa.value.toLocaleLowerCase()))
             || removerAcentos(element.secao.toLocaleLowerCase()).includes(removerAcentos(inputPesquisa.value.toLocaleLowerCase())))
         exibirCardProduto(filtroPesquisa)
+        adicionarItemCarrinho(filtroPesquisa)
         inputPesquisa.value = ""
     })
 }
