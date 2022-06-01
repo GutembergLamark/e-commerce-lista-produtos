@@ -63,7 +63,10 @@ main {
     border: none;
     background-color: #f1f3f5;
     padding: 0 10px;
+}
 
+.filtersContainer__campoBuscaPorNome:focus {
+    outline: none;
 }
 
 .estiloGeralBotoes--botaoBuscaPorNome {
